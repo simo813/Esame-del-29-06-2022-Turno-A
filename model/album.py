@@ -5,10 +5,11 @@ from dataclasses import dataclass
 class Album:
     AlbumId: int
     title: str
-    duration: int
+    ncanzoni: int
 
     def __str__(self):
         return self.title
+
     def __eq__(self, other):
         return self.AlbumId == other.AlbumId
 
